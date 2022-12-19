@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Obtener Datos EXIF</title>
+</head>
+
+<body>
+
+    <!-- Este es el formulario para subir la imagen -->
+    <form id="formulario">
+
+        <h4>Seleccione una imagen</h4>
+
+        <div id="datos"></div>
+
+        <div class="box">
+            <input type="file" id="imagen" accept="image/*">
+            <button type="button" id="boton">Obtener datos EXIF</button>
+            <button type="button" id="descargarDatos">Descargar Datos</button>
+        </div>
+
+    </form>
+
+    <!-- Aquí se mostrarán los datos EXIF -->
+
+    <!-- Incluye el archivo JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
